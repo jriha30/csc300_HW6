@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 string jsonArrayEditor(string jsonArray)
 {
     int counter = 1;
@@ -18,6 +17,7 @@ string jsonArrayEditor(string jsonArray)
         {
             counter--;
         }
+        
         if(jsonArray[i] == ']' && counter == 0)
         {
              return newString;
@@ -29,8 +29,6 @@ string jsonArrayEditor(string jsonArray)
     }
     return "Please enter a jsonArray represented as a string";
 }
-
-
 
 int main(int argc, char* argv[])
 {
